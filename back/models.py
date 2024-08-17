@@ -16,3 +16,11 @@ class Book(BaseModel):
                 "published_year": 1979
             }
         }
+
+
+class ResponseBook(BaseModel):
+    id: str
+    title: str
+    author: str
+    description: str
+    published_year: int
