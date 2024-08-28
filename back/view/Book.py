@@ -3,10 +3,10 @@ from typing import Annotated, List
 
 from bson.objectid import ObjectId
 
-from ..database import collection
-from ..models.User import User
-from ..models.Book import Book, ResponseBook
-from ..controller.Token import get_current_active_user
+from database import collection
+from models.User import User
+from models.Book import Book, ResponseBook
+from controller.Token import get_current_active_user
 
 from dotenv import dotenv_values
 config = dotenv_values(".env")

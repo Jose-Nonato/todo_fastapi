@@ -4,8 +4,8 @@ from fastapi import APIRouter, HTTPException, Depends, status
 from typing import Annotated
 from fastapi.security import OAuth2PasswordRequestForm
 
-from ..models.User import Token, User
-from ..controller.Token import authenticate_user, create_access_token, get_current_active_user
+from models.User import Token, User
+from controller.Token import authenticate_user, create_access_token, get_current_active_user
 
 from dotenv import dotenv_values
 config = dotenv_values(".env")
